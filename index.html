@@ -1,0 +1,357 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulan Itu Cantik</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .hero-section {
+            background-image: url('Background.jpg'); 
+            background-size: cover;
+            background-position: center;
+        }
+        .about-section {
+            background-image: url('BackgroundProfil.jpg'); 
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Initial Popup -->
+  <div class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50" id="initialPopup">
+    <div class="bg-white rounded-lg p-8 text-center relative shadow-lg">
+     <button class="absolute top-2 right-2 text-gray-500 hover:text-gray-700" id="closeInitialPopup">
+      <i class="fas fa-times">
+      </i>
+     </button>
+     <p class="text-xl mb-4">
+      Haii Bulan, Selain Di Web Ini ada Juga Yang Lain Lohh,hihi<br>Pencet Logo Di Bawah!!
+     </p>
+     <div class="flex justify-center space-x-4">
+      <a class="text-pink-500 hover:text-pink-700" href="https://wa.me/6288210982908?text=nah%20Kenapa%20KeWhatsapp?%20Ini%20Instagram%20Privacy%20Yang%20Hanya%20Bisa%20Di%20Lihat%20Oleh%20Langit%20Isi%20nya%2C%20Karna%20Instagram%20Di%20Private%20account%20Olehnya%2C%20Ingin%20Melihat%3F%20No%20follow%2C%20Kirim%20Pesan%20Ini%20Ke%20Langit%20agar%20Tahu%2Chihi" target="_blank">
+       <i class="fab fa-instagram fa-2x">
+       </i>
+      </a>
+      <a class="text-gray-800 hover:text-gray-900" href="https://www.github.com/SkyMoonWhisper" target="_blank">
+       <i class="fab fa-github fa-2x">
+       </i>
+      </a>
+     </div>
+    </div>
+   </div>
+    <!--  Header Background -->
+    <div class="hero-section flex flex-col items-center justify-center min-h-screen text-white relative">
+        <div class="text-center p-4 md:p-8 lg:p-12">
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-4">Bulan</h1>
+            <p class="text-xl md:text-2xl lg:text-3xl mb-8">Kamu Tau? Bulan Itu Cantik.</p>
+        </div>
+    </div>
+
+    <div class="bg-white py-4">
+        <div class="container mx-auto">
+            <hr class="border-gray-300">
+        </div>
+    </div>
+
+    <!-- Bagian About You -->
+    <div class="about-section text-white py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-8">About You</h2>
+            <div class="flex flex-col items-center">
+                <img alt="Profile picture of Langit" class="rounded-lg mb-4" height="150" src="BulanProfil.jpg" width="150"/>
+                <h3 class="text-xl md:text-2xl lg:text-3xl font-bold mb-2">Bulan</h3>
+                <p class="text-lg md:text-xl lg:text-2xl max-w-2xl">
+                  Bulan adalah Wanita Pertama Yang Di Cintai Hebat Oleh Langit,Bulan Tidak Hanya Cantik.Bulan Itu Selain Cantik Bulan Juga Lucu Dan Seperti Anak Kecil,Dimata Langit Bulan Adalah Wanita Hebat, Bulan Anak Kecil Langit.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white py-4">
+        <div class="container mx-auto">
+            <hr class="border-gray-300">
+        </div>
+    </div>
+
+    <!-- Bagian Percakapan -->
+    <div class="bg-white py-12">
+        <div class="container mx-auto">
+            <div class="space-y-4 max-w-2xl mx-auto">
+                <!-- Pesan 1 -->
+                <div class="flex items-start space-x-4">
+                    <img alt="Profile Langit" class="rounded-full h-10 w-10" src="LangitProfil.jpeg"/>
+                    <div class="bg-gray-100 p-4 rounded-lg shadow-lg">
+                        <p class="text-lg">Kurang Hebat Apa Kamu?</p>
+                    </div>
+                </div>
+                <!-- Pesan 2 -->
+                <div class="flex items-start space-x-4">
+                    <div class="bg-gray-100 p-4 rounded-lg shadow-lg ml-14">
+                        <p class="text-lg">Semuanya Kamu Lewati Sendiri.</p>
+                    </div>
+                </div>
+                <!-- Pesan 3 -->
+                <div class="flex items-start space-x-4">
+                    <div class="bg-gray-100 p-4 rounded-lg shadow-lg ml-14">
+                        <p class="text-lg">i proud of you</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white py-4">
+        <div class="container mx-auto">
+            <hr class="border-gray-300">
+        </div>
+    </div>
+
+    <div class="bg-white py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-8">Catatan</h2>
+            <div id="notes" class="bg-gray-100 rounded-lg shadow-lg p-6 max-w-2xl mx-auto">
+                <div id="notesList" class="mb-4">
+                    <!-- Notes will appear here -->
+                </div>
+                <button id="addNoteButton" class="bg-blue-500 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-600 transition duration-300">
+                    Tambah Catatan
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-blue-500 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p class="text-lg">Dibuat Oleh Langit Untuk Bulan</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-white rounded-lg p-8 text-center relative shadow-lg">
+            <button id="closeModal" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700">
+                <i class="fas fa-times"></i>
+            </button>
+            <p id="modalMessage" class="text-xl mb-4"></p>
+            <button id="modalButton" class="bg-blue-500 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-600 transition duration-300">
+                OK
+            </button>
+        </div>
+    </div>
+
+    <!-- Note Modal -->
+    <div id="noteModal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-white rounded-lg p-8 text-center relative shadow-lg">
+            <button id="closeNoteModal" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3 class="text-xl mb-4">Tambah Catatan</h3>
+            <input id="noteTitle" type="text" class="w-full p-2 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Judul">
+            <textarea id="noteContent" class="w-full p-2 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Isi"></textarea>
+            <button id="saveNoteButton" class="bg-blue-500 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-600 transition duration-300">
+                Simpan
+            </button>
+        </div>
+    </div>
+
+    <!-- Note View Modal -->
+    <div id="viewNoteModal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-white rounded-lg p-8 text-center relative shadow-lg">
+            <button id="closeViewNoteModal" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3 id="viewNoteTitle" class="text-xl mb-4"></h3>
+            <p id="viewNoteContent" class="text-lg mb-4"></p>
+        </div>
+    </div>
+
+    <!-- Warning Modal -->
+    <div id="warningModal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-white rounded-lg p-8 text-center relative shadow-lg">
+            <button id="closeWarningModal" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700">
+                <i class="fas fa-times"></i>
+            </button>
+            <p id="warningMessage" class="text-xl mb-4">Apakah Anda yakin ingin membatalkan pengeditan? Perubahan yang belum disimpan akan hilang.</p>
+            <div class="flex justify-center">
+                <button id="confirmCancelEdit" class="bg-red-500 text-white font-bold py-2 px-4 rounded-full hover:bg-red-600 transition duration-300 mr-2">
+                    Ya
+                </button>
+                <button id="cancelCancelEdit" class="bg-blue-500 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-600 transition duration-300">
+                    Tidak
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const addNoteButton = document.getElementById('addNoteButton');
+        const noteModal = document.getElementById('noteModal');
+        const closeNoteModal = document.getElementById('closeNoteModal');
+        const saveNoteButton = document.getElementById('saveNoteButton');
+        const noteTitle = document.getElementById('noteTitle');
+        const noteContent = document.getElementById('noteContent');
+        const notesList = document.getElementById('notesList');
+        const viewNoteModal = document.getElementById('viewNoteModal');
+        const closeViewNoteModal = document.getElementById('closeViewNoteModal');
+        const viewNoteTitle = document.getElementById('viewNoteTitle');
+        const viewNoteContent = document.getElementById('viewNoteContent');
+        const warningModal = document.getElementById('warningModal');
+        const closeWarningModal = document.getElementById('closeWarningModal');
+        const confirmCancelEdit = document.getElementById('confirmCancelEdit');
+        const cancelCancelEdit = document.getElementById('cancelCancelEdit');
+
+        let isEditing = false;
+        let currentEditingNote = null;
+
+        // Load notes from localStorage
+        document.addEventListener('DOMContentLoaded', () => {
+            const notes = JSON.parse(localStorage.getItem('notes')) || [];
+            notes.forEach(note => {
+                addNoteToDOM(note.title, note.content);
+            });
+        });
+
+        addNoteButton.addEventListener('click', () => {
+            noteModal.classList.remove('hidden');
+        });
+
+        closeNoteModal.addEventListener('click', () => {
+            if (isEditing) {
+                warningModal.classList.remove('hidden');
+            } else {
+                noteModal.classList.add('hidden');
+            }
+        });
+
+        // Show initial popup
+        const initialPopup = document.getElementById('initialPopup');
+        const closeInitialPopup = document.getElementById('closeInitialPopup');
+        initialPopup.classList.remove('hidden');
+        document.body.classList.add('no-scroll');
+        closeInitialPopup.addEventListener('click', () => {
+            initialPopup.classList.add('hidden');
+            document.body.classList.remove('no-scroll');
+        });
+
+        saveNoteButton.addEventListener('click', () => {
+            const title = noteTitle.value;
+            const content = noteContent.value;
+
+            if (title && content) {
+                if (isEditing) {
+                    updateNoteInDOM(currentEditingNote, title, content);
+                    updateNoteInLocalStorage(currentEditingNote, title, content);
+                    isEditing = false;
+                    currentEditingNote = null;
+                } else {
+                    addNoteToDOM(title, content);
+                    saveNoteToLocalStorage(title, content);
+                }
+
+                noteTitle.value = '';
+                noteContent.value = '';
+                noteModal.classList.add('hidden');
+            }
+        });
+
+        closeViewNoteModal.addEventListener('click', () => {
+            viewNoteModal.classList.add('hidden');
+        });
+
+        confirmCancelEdit.addEventListener('click', () => {
+            noteModal.classList.add('hidden');
+            warningModal.classList.add('hidden');
+            isEditing = false;
+            currentEditingNote = null;
+        });
+
+        cancelCancelEdit.addEventListener('click', () => {
+            warningModal.classList.add('hidden');
+        });
+
+        function addNoteToDOM(title, content) {
+            const noteItem = document.createElement('div');
+            noteItem.classList.add('bg-white', 'p-4', 'rounded-lg', 'shadow-lg', 'mb-4', 'cursor-pointer');
+            noteItem.innerHTML = `
+                <div class="flex justify-between items-center">
+                    <h4 class="text-lg font-bold">${title}</h4>
+                    <div>
+                        <button class="editNoteButton text-blue-500 hover:text-blue-700 mr-2">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button class="deleteNoteButton text-red-500 hover:text-red-700">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+            `;
+
+            notesList.appendChild(noteItem);
+
+            const editNoteButton = noteItem.querySelector('.editNoteButton');
+            const deleteNoteButton = noteItem.querySelector('.deleteNoteButton');
+
+            noteItem.addEventListener('click', () => {
+                viewNoteTitle.textContent = title;
+                viewNoteContent.textContent = content;
+                viewNoteModal.classList.remove('hidden');
+            });
+
+            editNoteButton.addEventListener('click', (event) => {
+                event.stopPropagation();
+                noteTitle.value = title;
+                noteContent.value = content;
+                noteModal.classList.remove('hidden');
+                isEditing = true;
+                currentEditingNote = noteItem;
+            });
+
+            deleteNoteButton.addEventListener('click', (event) => {
+                event.stopPropagation();
+                notesList.removeChild(noteItem);
+                removeNoteFromLocalStorage(title, content);
+            });
+        }
+
+        function updateNoteInDOM(noteItem, newTitle, newContent) {
+            const titleElement = noteItem.querySelector('h4');
+            titleElement.textContent = newTitle;
+            noteItem.addEventListener('click', () => {
+                viewNoteTitle.textContent = newTitle;
+                viewNoteContent.textContent = newContent;
+                viewNoteModal.classList.remove('hidden');
+            });
+        }
+
+        function saveNoteToLocalStorage(title, content) {
+            const notes = JSON.parse(localStorage.getItem('notes')) || [];
+            notes.push({ title, content });
+            localStorage.setItem('notes', JSON.stringify(notes));
+        }
+
+        function updateNoteInLocalStorage(noteItem, newTitle, newContent) {
+            let notes = JSON.parse(localStorage.getItem('notes')) || [];
+            const oldTitle = noteItem.querySelector('h4').textContent;
+            notes = notes.map(note => {
+                if (note.title === oldTitle) {
+                    return { title: newTitle, content: newContent };
+                }
+                return note;
+            });
+            localStorage.setItem('notes', JSON.stringify(notes));
+        }
+
+        function removeNoteFromLocalStorage(title, content) {
+            let notes = JSON.parse(localStorage.getItem('notes')) || [];
+            notes = notes.filter(note => note.title !== title || note.content !== content);
+            localStorage.setItem('notes', JSON.stringify(notes));
+        }
+    </script>
+</body>
+</html>
